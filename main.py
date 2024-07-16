@@ -3,6 +3,13 @@ from gmplot import gmplot
 import webbrowser
 from decimal import Decimal, getcontext
 
+
+"""
+Decimal degrees (DD): 41.40338, 2.17403
+Degrees, minutes and seconds (DMS): 41°24'12.2"N 2°10'26.5"E
+Degrees and decimal minutes (DMM): 41 24.2028, 2 10.4418
+"""
+
 def dms_to_decimal(degrees, minutes, seconds):
     print(degrees[0], minutes[0]/60.0, round(seconds[0]/1000000.0/3600.0,4))
     decimal_degrees = degrees[0] + minutes[0] / 60.0 + seconds[0]/1000000.0 / 3600.0
@@ -59,6 +66,7 @@ gps_coordinates = get_gps_coordinates(image_path)
 
 Latitude: -90 to +90 degrees
 Length: -180 to +180 degrees
+
 """
 
 if gps_coordinates:
