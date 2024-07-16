@@ -54,6 +54,13 @@ image_path = 'test.jpg'
 
 # Obtener coordenadas GPS
 gps_coordinates = get_gps_coordinates(image_path)
+
+""" Typically, latitude and longitude coordinates are in the range of:
+
+Latitude: -90 to +90 degrees
+Length: -180 to +180 degrees
+"""
+
 if gps_coordinates:
     latitude, longitude = gps_coordinates
     print(f"Coordenadas GPS:\nLatitud: {round(latitude, 4)}\nLongitud: {round(longitude, 4)}")
