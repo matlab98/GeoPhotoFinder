@@ -9,21 +9,21 @@ To get started with GeoPhotoFinder, follow these steps:
 
 Clone the repository:
 
-bash
-> git clone https://github.com/yourusername/PhotoLocationFinder.git
-> cd PhotoLocationFinder
-
+```bash
+git clone https://github.com/yourusername/PhotoLocationFinder.git
+cd PhotoLocationFinder
+```
 ### Set up a virtual environment (optional but recommended):
 
-bash
-> python3 -m venv venv
-> source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
-
+```bash
+python3 -m venv venv
+source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+```
 ## Install the dependencies:
 
-bash
->  pip install -r requirements.txt
-
+```bash
+pip install -r requirements.txt
+```
 ### Usage
 
 * Upload a photo through the user interface.
